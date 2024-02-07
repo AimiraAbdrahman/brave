@@ -67,3 +67,24 @@ else
     Console.WriteLine("нет");
 }
 
+// Homework task 2
+double x = 3;
+double y = -4;
+
+if (x > 0 && y > 0)
+{
+    Console.WriteLine("точка находится в первой четверти");
+}
+
+if ( x < 0 && y > 0)
+{
+    Console.WriteLine("точка находится во второй четверти");
+}
+if ( x < 0 && y < 0)
+{
+    Console.WriteLine("точка находится в третьей четверти");
+}
+if ( x > 0 && y < 0)
+{
+    Console.WriteLine("точка находится в четвертой четверти");
+}
