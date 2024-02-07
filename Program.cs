@@ -57,6 +57,8 @@
 // }
 
 // Homework task 1
+using System.Diagnostics;
+
 int a = 322;
 if (a % 7 == 0 && a % 23 == 0)
 {
@@ -100,4 +102,25 @@ if (firstDigit > secondDigit)
 else
 {
     Console.WriteLine($"{secondDigit}");
+}
+
+// Homework task 4
+int N = 975;
+
+if (N < 10)
+{
+    Console.WriteLine($"{N}");
+}
+if (N > 10 && N < 100)
+{
+    int firstD = N / 10;
+    int secondD = N % 10;
+    Console.WriteLine($"{firstD} , {secondD}");
+}
+if (N > 100 && N < 1000)
+{
+    int firstD = N / 100;
+    int secondD = N / 10 % 10;
+    int thirdD = N % 10;
+    Console.WriteLine($"{firstD} , {secondD} , {thirdD}");
 }
