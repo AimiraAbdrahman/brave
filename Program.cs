@@ -88,3 +88,16 @@ if ( x > 0 && y < 0)
 {
     Console.WriteLine("точка находится в четвертой четверти");
 }
+
+// Homework task 3
+int number = 74;
+int firstDigit = number / 10;
+int secondDigit = number % 10;
+if (firstDigit > secondDigit)
+{
+    Console.WriteLine($"{firstDigit}");
+}
+else
+{
+    Console.WriteLine($"{secondDigit}");
+}
