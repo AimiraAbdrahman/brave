@@ -21,8 +21,25 @@
 // 254 => 5^4 = 625
 // 617 => 1
 
-int number = 947;
-int secondDigit = number / 10 % 10; // 947 / 10 % 10 = 94 % 10 = 4
-int thirdDigit = number % 10; // 947 % 10 = 7
-int result = (int)Math.Pow(secondDigit, thirdDigit); // result is converted to (int) type
-Console.WriteLine($"{secondDigit} ^ {thirdDigit} = {result}"); // 4 ^ 7  
+// int number = 947;
+// int secondDigit = number / 10 % 10; // 947 / 10 % 10 = 94 % 10 = 4
+// int thirdDigit = number % 10; // 947 % 10 = 7
+// int result = (int)Math.Pow(secondDigit, thirdDigit); // result is converted to (int) type
+// Console.WriteLine($"{secondDigit} ^ {thirdDigit} = {result}"); // 4 ^ 7 = 16384
+
+// Напишите программу, которая выводит третью с конца 
+// цифру заданного числа или сообщает, что третьей цифры нет
+// 456 => 4
+// 7812 => 8
+// 91 => no third number
+
+int number = 925;
+if (number >= 100) // number has three digits
+{
+int thirdDigitFromEnd = number / 100 % 10;
+Console.WriteLine($"Третья цифра с конца: {thirdDigitFromEnd}");
+}
+else // there is no third digit
+{
+    Console.WriteLine("No third digit");
+}
