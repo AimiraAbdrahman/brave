@@ -13,7 +13,7 @@
 
 // git add. (-a)
 // git commit -m this can be replaced with git commit -am
- 
+
 // Напишите программу, которая принимает на вход трехзначное число 
 // и возводит вторую цифру этого числа в степень, равную третьей цифре.
 // Примеры 
@@ -33,13 +33,27 @@
 // 7812 => 8
 // 91 => no third number
 
-int number = 925;
-if (number >= 100) // number has three digits
+// int number = 925;
+// if (number >= 100) // number has three digits
+// {
+// int thirdDigitFromEnd = number / 100 % 10;
+// Console.WriteLine($"Третья цифра с конца: {thirdDigitFromEnd}");
+// }
+// else // there is no third digit
+// {
+//     Console.WriteLine("No third digit");
+// }
+
+using System.Diagnostics;
+
+int a = 5;
+int b = 3;
+
+if (a % b == 0)
 {
-int thirdDigitFromEnd = number / 100 % 10;
-Console.WriteLine($"Третья цифра с конца: {thirdDigitFromEnd}");
+    Console.WriteLine($"{a} кратно (делится без остатка) {b}");
 }
-else // there is no third digit
+else 
 {
-    Console.WriteLine("No third digit");
+    Console.WriteLine($"Остаток от {a} / {b} = {a % b}");
 }
