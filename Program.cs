@@ -44,16 +44,26 @@
 //     Console.WriteLine("No third digit");
 // }
 
-using System.Diagnostics;
+// int a = 5;
+// int b = 3;
 
-int a = 5;
-int b = 3;
+// if (a % b == 0)
+// {
+//     Console.WriteLine($"{a} кратно (делится без остатка) {b}");
+// }
+// else 
+// {
+//     Console.WriteLine($"Остаток от {a} / {b} = {a % b}");
+// }
 
-if (a % b == 0)
+// Homework task 1
+int a = 322;
+if (a % 7 == 0 && a % 23 == 0)
 {
-    Console.WriteLine($"{a} кратно (делится без остатка) {b}");
+    Console.WriteLine($"{a} кратно 7 и 23");
 }
 else 
 {
-    Console.WriteLine($"Остаток от {a} / {b} = {a % b}");
+    Console.WriteLine("нет");
 }
+
